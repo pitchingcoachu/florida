@@ -649,8 +649,8 @@ js_sort <-
   paste0("}")
 
 # ---- Notes API config ----
-NOTES_API_URL   <- "https://script.google.com/macros/s/AKfycbwuftWhRZGV7f1lWFJnC5mBcxaXh7P7Xhlc7_Lvr5r6ZO_GYKbv6YxCp7B0AXsvCKY0/exec"
-NOTES_API_TOKEN <- "GCUbaseball"
+NOTES_API_URL   <- "https://script.google.com/macros/s/AKfycbw0g_TAtOCQ47q_Yg4ZBM1_vxwGtGC2-kxDQTxS6fw4HBivWSJF2M8ia1BpQR2TzWb2-g/exec"
+NOTES_API_TOKEN <- "UFbaseball"
 
 # small helper
 # Replace the old %or% with this scalar-safe version
@@ -8504,7 +8504,7 @@ server <- function(input, output, session) {
     }
   }, ignoreInit = TRUE)
   
-  admin_emails <- c("jgaynor@pitchingcoachu.com", "banni17@yahoo.com", "micaiahtucker@gmail.com")
+  admin_emails <- c("jgaynor@pitchingcoachu.com", "zachc@gators.ufl.edu", "DavidK@gators.ufl.edu")
   # helper to normalize email
   norm_email <- function(x) tolower(trimws(x))
   
