@@ -2207,28 +2207,27 @@ catcher_map <- setNames(raw_catchers, catch_display)
 
 # ==== PITCHERS-ONLY WHITELIST ====
 ALLOWED_PITCHERS <- c(
-  "Lee, Aidan",
-  "Limas, Jacob",
-  "Higginbottom, Elijah",
-  "Cunnings, Cam",
-  "Moeller, Luke",
-  "Smith, Jace",
-  "Frey, Chase",
-  "Ahern, Garrett",
-  "McGuire, Tommy",
-  "Robb, Nicholas",
-  "Guerrero, JT",
-  "Gregory, Billy",
-  "Penzkover, Gunnar",
-  "Lewis, JT",
-  "Kiemele, Cody",
-  "Cohen, Andrew",
-  "Lyon, Andrew",
-  "Johns, Tanner",
-  "Toney, Brock",
-  "Sloan, Landon",
-  "Key, Chance",
-  "Orr, Dillon"
+  "Rodriguez, Christian",
+  "McNeillie, Luke",
+  "Peterson, Liam",
+  "Whritenour, Joshua",
+  "Gomberg, Jacob",
+  "Coppola, Pierce",
+  "Clemente, Jake",
+  "McDonald, Caden",
+  "Barberi, Jackson",
+  "Barlow, Billy",
+  "Janssens, Niko",
+  "Rowland, Blaine",
+  "Menendez, Frank",
+  "Biemiller, McCall",
+  "Philpott, Alex",
+  "Jenkins, Matthew",
+  "Laurito, Mason",
+  "Ong, Felix",
+  "Sandford, Schuyler",
+  "King, Aidan",
+  "Montsdeoca, Carson"
 )
 
 `%in_ci%` <- function(x, y) tolower(x) %in% tolower(y)
@@ -2613,7 +2612,7 @@ pitch_ui <- function(show_header = FALSE) {
         column(
           2,
           div(style = "text-align:right; margin-top:10px;",
-              tags$img(src = "GCUlogo.png", height = "80px"))
+              tags$img(src = "UFlogo.png", height = "80px"))
         )
       )
     },
@@ -2967,7 +2966,7 @@ mod_hit_ui <- function(id, show_header = FALSE) {
         column(
           2,
           div(style = "text-align:right; margin-top:10px;",
-              tags$img(src = "GCUlogo.png", height = "80px"))
+              tags$img(src = "UFlogo.png", height = "80px"))
         )
       )
     },
@@ -4176,7 +4175,7 @@ mod_catch_ui <- function(id, show_header = FALSE) {
         column(
           2,
           div(style = "text-align:right; margin-top:10px;",
-              tags$img(src = "GCUlogo.png", height = "80px"))
+              tags$img(src = "UFlogo.png", height = "80px"))
         )
       )
     },
@@ -5868,7 +5867,7 @@ mod_leader_ui <- function(id, show_header = FALSE) {
         column(
           2,
           div(style = "text-align:right; margin-top:10px;",
-              tags$img(src = "GCUlogo.png", height = "80px"))
+              tags$img(src = "UFlogo.png", height = "80px"))
         )
       )
     },
@@ -8091,7 +8090,7 @@ player_plans_ui <- function() {
               ),
               column(2,
                      div(style = "text-align: right; padding-top: 30px;",
-                         tags$img(src = "GCUlogo.png", style = "height: 40px; max-width: 100%;")
+                         tags$img(src = "UFlogo.png", style = "height: 40px; max-width: 100%;")
                      )
               )
             ),
@@ -8196,8 +8195,8 @@ ui <- tagList(
   # --- Custom navbar colors & styling ---
   tags$head(
     tags$style(HTML("
-      /* Black navbar */
-      .navbar-inverse { background-color:#000000; border-color:#000000; }
+      /* Blue navbar */
+      .navbar-inverse { background-color:#003366; border-color:#003366; }
       .navbar { position:relative; box-shadow: 0 2px 8px rgba(0,0,0,.15); }
 
       /* Brand area with two logos side-by-side (left side) */
@@ -8233,13 +8232,13 @@ ui <- tagList(
       /* Tab links */
       .navbar-inverse .navbar-nav>li>a { color:#f2f2f2 !important; font-weight:600; }
       .navbar-inverse .navbar-nav>li>a:hover,
-      .navbar-inverse .navbar-nav>li>a:focus { color:#552B9A !important; background:transparent; }
+      .navbar-inverse .navbar-nav>li>a:focus { color:#FF6600 !important; background:transparent; }
 
       /* Active tab */
       .navbar-inverse .navbar-nav>.active>a,
       .navbar-inverse .navbar-nav>.active>a:hover,
       .navbar-inverse .navbar-nav>.active>a:focus {
-        color:#ffffff !important; background-color:#552B9A !important;
+        color:#ffffff !important; background-color:#FF6600 !important;
       }
 
       /* Add Note button */
@@ -8278,7 +8277,7 @@ ui <- tagList(
   tags$style(HTML("
     /* Custom note button color */
     #openNote.btn-note {
-      background-color:#552B9A;   /* base */
+      background-color:#FF6600;   /* base */
       border-color:#ffffff;
       color:#fff;
     }
@@ -8286,7 +8285,7 @@ ui <- tagList(
     #openNote.btn-note:focus,
     #openNote.btn-note:active,
     #openNote.btn-note:active:focus {
-      background-color:#000000;   /* hover/active */
+      background-color:#003366;   /* hover/active */
       border-color:#ffffff;
       color:#fff;
       outline:none;
@@ -8304,7 +8303,7 @@ ui <- tagList(
   
   navbarPage(
     title = tagList(
-      tags$img(src = "GCUlogo.png", class = "brand-logo", alt = "GCU"),
+      tags$img(src = "UFlogo.png", class = "brand-logo", alt = "UF"),
       tags$span("Dashboard", class = "brand-title"),
       tags$img(src = "PCUlogo.png", class = "pcu-right", alt = "PCU")
     ),
