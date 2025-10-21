@@ -2211,6 +2211,7 @@ ALLOWED_PITCHERS <- c(
   "McNeillie, Luke",
   "Peterson, Liam",
   "Whritenour, Joshua",
+  "Whritenour, Josh",
   "Gomberg, Jacob",
   "Coppola, Pierce",
   "Clemente, Jake",
@@ -2223,11 +2224,21 @@ ALLOWED_PITCHERS <- c(
   "Biemiller, McCall",
   "Philpott, Alex",
   "Jenkins, Matthew",
+  "Jenkins, Matt",
   "Laurito, Mason",
   "Ong, Felix",
   "Sandford, Schuyler",
   "King, Aidan",
-  "Montsdeoca, Carson"
+  "Montsdeoca, Carson",
+  "Sandefer, Russell",
+  "Moss, Cooper",
+  "Reeth, Ricky",
+  "Kurland, Rivers",
+  "Blair, Eli",
+  "Hoyt, Jackson",
+  "Walls, Cooper",
+  "Seo, Minjae",
+  "Lugo-Canchola, Ernesto"
 )
 
 `%in_ci%` <- function(x, y) tolower(x) %in% tolower(y)
